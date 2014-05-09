@@ -1,4 +1,4 @@
-# Mathias’s dotfiles
+# Paul’s dotfiles
 
 ## Installation
 
@@ -90,7 +90,7 @@ brew bundle ~/Caskfile
 Suggestions/improvements
 [welcome](https://github.com/mathiasbynens/dotfiles/issues)!
 
-## Author
+## Original Author
 
 | [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/mathias "Follow @mathias on Twitter") |
 |---|
