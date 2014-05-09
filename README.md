@@ -18,7 +18,7 @@ You can clone the repository wherever you want. (I like to keep it in `~/Project
  - Install Homebrew formulae
  - Install native apps with `brew cask`
 
- If you don't want to bootstrap all of these commands you are free to run each component seperately (see instructions below).
+#### If you don't want to bootstrap all of these commands you are free to run each component seperately (see instructions below).
 
 ```bash
 git clone https://github.com/paulbaker3/dotfiles.git && cd dotfiles && source bootstrap.sh
