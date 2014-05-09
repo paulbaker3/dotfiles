@@ -1,5 +1,9 @@
+source ~/.bashrc
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH"
+export PATH='$PATH:/opt/local/bin/'
 export PATH="/usr/local/bin:$PATH"
 
 # Load the shell dotfiles, and then some:

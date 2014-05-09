@@ -15,6 +15,70 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
+alias editbash='vim ~/.bashrc' 
+alias srcbash='source ~/.bashrc'
+
+alias code='cd ~/Code'
+alias sc='cd ~/Code/subconnect'
+alias blog='cd ~/Code/paulbaker3'
+alias jarvis='cd ~/Code/jarvis'
+
+alias git=hub
+alias gs='git status'
+alias gm='git co master'
+alias gp='git push'
+alias ga='git add .'
+alias gc='git commit'
+alias git_it_all='git status && git add . && git commit && git push && git push heroku master'
+alias git_delete_merged_branches='git co master && git branch --merged | grep -v "\*" | xargs -n 1 git branch -d' 
+function gin() { git diff "$@"; git add "$@"; git commit; }
+
+alias hl='heroku logs -t'
+alias hl_paul1='heroku logs -t -a sub-connect-paul1'
+alias hl_paul2='heroku logs -t -a sub-connect-paul2'
+alias hl_paul3='heroku logs -t -a sub-connect-paul3'
+alias hl_prod='heroku logs -t -a red-october'
+alias hl_smokey='heroku logs -t -a sub-connect-smokey'
+alias hl_demoprime='heroku logs -t -a sub-connect-demoprime'
+
+alias ssh_sc_aws='cd ~/.ssh && ssh ubuntu@ec2-54-214-45-159.us-west-2.compute.amazonaws.com -i subconnect_marketing.pem'
+
+alias hpgbkup_prod='heroku pgbackups:capture --expire --app red-october && mkdir -p tmp tmp/pgbackups && curl -o tmp/pgbackups/latest-prod.dump `heroku pgbackups:url --app red-october`'
+
+alias screenshots='open ~/Code/subconnect/tmp/screenshots'
+function ci() { TESTS="$@" rake run:integration_tests; }
+#function ci() { echo "$@"; } 
+alias ci_all='rake run:integration_tests'
+alias ci_current='TESTS=user-interface rake run:integration_tests'
+alias fresh_dev_data='SERVER=demoprime DESTINATION=development rake db:restore:from_server'
+alias force_rails_s="IGNORE_FAILED_COMMANDS='true' rake kill:rails_server && rails s"
+
+alias mysql='mysql5'
+alias mysqlstart='sudo /opt/local/share/mysql5/mysql/mysql.server start'
+alias mysqlstop='sudo /opt/local/share/mysql5/mysql/mysql.server stop'
+
+alias pg_sc_test='psql -d subconnect_test'
+alias pg_sc_development='psql -d subconnect_development'
+
+alias whats_my_ip='ifconfig | grep inet'export PATH=/opt/local/lib/postgresql92/bin:$PATH
+
+alias you_shipz_it_now='echo https://f.cloud.github.com/assets/619166/2262648/6e1d1f66-9e5c-11e3-807e-8a37a04f54f5.jpg | pbcopy'
+alias uhura_ship_it='echo https://f.cloud.github.com/assets/619166/2263040/fed6788c-9e60-11e3-8918-4e942ce28e47.jpg | pbcopy'
+alias i_salute_you_with_awesomeness='echo https://s3.amazonaws.com/uploads.hipchat.com/66880/467015/AUvIWJLsew9BEHo/I_salute_you_with_awesomeness.jpeg | pbcopy'
+alias soldier_squirrel='echo https://s3.amazonaws.com/uploads.hipchat.com/66880/467015/JoULAArGl0udA9G/SquirrelSoldier-1.jpg | pbcopy'
+alias soldier_squirrel_markdown="echo '![soldier_squirrel](https://s3.amazonaws.com/uploads.hipchat.com/66880/467015/JoULAArGl0udA9G/SquirrelSoldier-1.jpg)' | pbcopy"
+alias do_crime='echo https://s3.amazonaws.com/uploads.hipchat.com/66880/467015/452UfmoGqg6rWOq/use_this_to_do_crime.gif | pbcopy'
+alias wtf='echo https://s3.amazonaws.com/uploads.hipchat.com/66880/467015/EtlljfMnGWBtlP9/wtfm.jpg | pbcopy'
+alias nuke_it='echo https://s3.amazonaws.com/uploads.hipchat.com/66880/467015/TV3A4OX0Qszdv0Z/NukeitfromorbitItstheonlywaytobe.jpg | pbcopy'
+alias a_players='echo https://s3.amazonaws.com/uploads.hipchat.com/66880/467015/uoMtGH5tM2np1Kr/a_players.png | pbcopy'
+
+#Mac Commands
+alias restart_sound_app="sudo kill -9 `ps ax|grep 'coreaudio[a-z]' | awk '{print $1}'`"
+alias restart_wifi="networksetup -setairportpower en0 off && networksetup -setairportpower en0 on"
+alias dot_files_show="defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder"
+alias dot_files_hide="defaults write com.apple.finder AppleShowAllFiles -bool NO && killall Finder"
+alias backup_iterm_settings="cp /Users/paulbaker/Library/Preferences/com.googlecode.iterm2.plist /Users/paulbaker/Dropbox/OS\ Setup\ Files/OSX/"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
