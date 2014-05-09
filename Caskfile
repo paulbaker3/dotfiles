@@ -11,9 +11,11 @@ cask install evernote 2> /dev/null
 cask install firefox 2> /dev/null
 cask install google-chrome 2> /dev/null
 cask install google-chrome-canary 2> /dev/null
+cask install hipchat 2> /dev/null
 cask install iterm2 2> /dev/null
 cask install joinme 2> /dev/null
 cask install macvim 2> /dev/null
+cask install notationalvelocity 2> /dev/null
 cask install opera 2> /dev/null
 cask install skitch 2> /dev/null
 cask install skype 2> /dev/null
