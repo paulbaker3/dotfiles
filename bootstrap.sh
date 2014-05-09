@@ -2,7 +2,7 @@
 cd "$(dirname "${BASH_SOURCE}")"
 git pull origin master
 
-# Will install Homebrew
+# Install Homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew doctor
 
