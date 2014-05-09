@@ -11,14 +11,14 @@ sudo xcodebuild -license
 xcode-select --install
 ```
 
+#### If you don't want to bootstrap all of these commands you are free to run each component seperately (see instructions below).
+
 You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will: 
  - Pull in the latest version
  - Copy the dotfiles to your home folder
  - Set OSX defaults
  - Install Homebrew formulae
  - Install native apps with `brew cask`
-
-#### If you don't want to bootstrap all of these commands you are free to run each component seperately (see instructions below).
 
 ```bash
 git clone https://github.com/paulbaker3/dotfiles.git && cd dotfiles && source bootstrap.sh
