@@ -101,6 +101,7 @@ brew bundle ~/Caskfile
 
 Suggestions/improvements
 [welcome](https://github.com/paulbaker3/dotfiles/issues)!
+
 Follow me on Twitter [@paulbaker3](http://twitter.com/paulbaker3)
 
 ## Thanks to…
