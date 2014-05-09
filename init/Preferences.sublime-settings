@@ -1,12 +1,13 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Blackboard.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"default_line_ending": "unix",
 	"show_line_endings": true,
 	"default_encoding": "UTF-8",
 	"show_encoding": true,
 	"detect_indentation": false,
-	"draw_white_space": "all",
+	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": false,
+  "expand_tabs_on_save": true,
 	"file_exclude_patterns":
 	[
 		".DS_Store",
@@ -19,13 +20,17 @@
 	],
 	"folder_exclude_patterns":
 	[
-		".git",
-		"node_modules"
+		".svn",
+    ".hg",
+    "CVS"
 	],
-	"font_size": 14,
+  "fold_buttons": true,
+  "fade_fold_buttons": false,
+	"font_size": 12,
 	"highlight_modified_tabs": true,
-	"hot_exit": false,
+	"hot_exit": true,
 	"line_padding_bottom": 6,
+  "line_numbers": true,
 	"match_brackets": true,
 	"match_brackets_angle": true,
 	"remember_open_files": false,
@@ -33,8 +38,17 @@
 	[
 		80
 	],
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "show_full_path": true
 	"tab_size": 2,
-	"translate_tabs_to_spaces": false,
+  // The theme controls the look of Sublime Text's UI (buttons, tabs, scroll bars, etc)
+  // "theme": "Default.sublime-theme",
+  // "theme": "Soda Light.sublime-theme",
+  "theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true
 }
