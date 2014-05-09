@@ -43,3 +43,4 @@ brew doctor
 postgres
 
 - swap out the dropbox icon on in the toolbar for a greyscale one
+- Fix the Application menu linking
